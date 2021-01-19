@@ -1,39 +1,51 @@
 <!DOCTYPE html><!-- Определяем HTML 5 -->
-<html lang="ru">  <!-- Вся структура страницы -->
+<html lang="ru">
+<!-- Вся структура страницы -->
 
-<head> <!-- Голова сайта -->
+<style>
+    .text-white {
+        color: white;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .mt-5 {
+        margin-top: 5rem;
+    }
+</style>
+
+
+<head>
+    <!-- Голова сайта -->
     <meta charset="UTF-8"> <!-- Кодировка дркумента -->
     <title>Document</title> <!-- Загаловок страницы -->
 </head>
 
-<body> <!-- Тело страницы -->
-    <h1>Добро пожаловать на сайт!</h1> <!-- Загаловок первого уровня -->
-    <p>На этой странице я буду оставлять ссылки для всех ДЗ по web. Нет времени пока её (страницу) стилизовать</p> <!-- Абзац -->
+<body style="background-color: rgb(0, 0, 0);">
+    <!-- Тело страницы -->
+    <h1 class="text-white">Добро пожаловать на сайт!</h1> <!-- Загаловок первого уровня -->
+    <p class="text-white">На этой странице я буду оставлять ссылки для всех ДЗ по web. Нет времени пока её (страницу)
+        стилизовать</p>
+    <!-- Абзац -->
     <hr> <!-- Линия -->
-    <h2>ТЗИ - 19Р</h2> <!-- Загаловок первого уровня -->
-    <img src="mkIBGRPrQ-Q.jpeg"
-        width="75" height="75"> <!-- Картинка -->
-        <br> <!-- Отступ -->
-        <br>
-    <p>Наша группа:</p>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nisi voluptate nemo quos? Ducimus eveniet odio
-        eligendi, praesentium iste repellendus veritatis id nostrum, iusto necessitatibus voluptas alias minus adipisci.
-        Iste!
-        Repudiandae impedit tempore, ipsa in corporis qui eius magni praesentium consequatur ab, nemo doloribus, ea
-        optio consequuntur! Iusto harum ipsum error at dolorem similique? Ipsum illo nostrum cumque aut! Esse.
-        Dolor, tempore neque hic recusandae assumenda ullam debitis! Facere sequi exercitationem iste obcaecati commodi
-        dignissimos quae sapiente fugiat minus. Veniam voluptas voluptate sapiente nostrum, repellat corporis error?
-        Quod, debitis quis.
-        Ad est dolorum, unde odio obcaecati ducimus excepturi? Consequuntur, doloremque explicabo et expedita ex
-        voluptas commodi deleniti optio id perferendis modi laborum asperiores harum cupiditate ducimus nemo,
-        perspiciatis debitis doloribus!
-        Ab alias quasi suscipit distinctio minus, numquam asperiores deleniti nihil temporibus eaque perspiciatis
-        obcaecati eum sit nobis! Consequuntur quidem unde temporibus quod, ipsum, quae praesentium corporis voluptatum
-        aperiam nemo blanditiis.
-    </p>
+    <div class="center mt-5">
+        <img src="mkIBGRPrQ-Q.jpeg" width="75" height="75">
+    </div>
 
-    <p style="text-align: center; margin-top: 5rem; font: 32px bold ">Спасибо за внимание!</p>
+    <!-- Соц сети -->
+    <div>
+        <a href="https://vk.com"><img src="vk.svg" width="50" height="50"></a>
+        <a href="https://www.instagram.com"><img src="Instagram.webp" width="50" height="50"></a>
+        <a href="https://facebook.com"><img src="facebook.png" width="50" height="50"></a>
+    </div>
+    <div class="center">
+        <iframe width="560" height="315" class="mt-5" src="https://www.youtube.com/embed/YSMEsf-gH84" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <p class="text-white" style="text-align: center; margin-top: 5rem; font: 32px bold ">Спасибо за внимание!</p>
 </body>
 
 </html>
