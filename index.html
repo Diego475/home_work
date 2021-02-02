@@ -1,51 +1,43 @@
-<!DOCTYPE html><!-- Определяем HTML 5 -->
-<html lang="ru">
-<!-- Вся структура страницы -->
-
-<style>
-    .text-white {
-        color: white;
-    }
-
-    .center {
-        text-align: center;
-    }
-
-    .mt-5 {
-        margin-top: 5rem;
-    }
-</style>
-
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <!-- Голова сайта -->
-    <meta charset="UTF-8"> <!-- Кодировка дркумента -->
-    <title>Document</title> <!-- Загаловок страницы -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашняя работа</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: rgb(0, 0, 0);">
-    <!-- Тело страницы -->
-    <h1 class="text-white">Добро пожаловать на сайт!</h1> <!-- Загаловок первого уровня -->
-    <p class="text-white">На этой странице я буду оставлять ссылки для всех ДЗ по web. Нет времени пока её (страницу)
-        стилизовать</p>
-    <!-- Абзац -->
-    <hr> <!-- Линия -->
-    <div class="center mt-5">
-        <img src="mkIBGRPrQ-Q.jpeg" width="75" height="75">
+<body>
+    <div class="container">
+        <div class="card mt__5">
+            <div class="row">
+                <div class="col__12 text__center mb__1">
+                    <h2>Впервый на сайте?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col__12 text__center mb__1">
+                    <span class="text-secondary">Мгновенная регистрация</span>
+                </div>
+            </div>
+            <div class="row justify__content__center">
+                <div class="col__12">
+                    <form>
+                        <div class="mb__1">
+                            <input type="text" class="form__control" placeholder="Ваше имя">
+                        </div>
+                        <div class="mb__1">
+                            <input type="text" class="form__control" placeholder="Ваша фамилия">
+                        </div>
+                        <div class="mb__1">
+                            <button class="btn">Зарешестрироваться</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Соц сети -->
-    <div>
-        <a href="https://vk.com"><img src="vk.svg" width="50" height="50"></a>
-        <a href="https://www.instagram.com"><img src="Instagram.webp" width="50" height="50"></a>
-        <a href="https://facebook.com"><img src="facebook.png" width="50" height="50"></a>
-    </div>
-    <div class="center">
-        <iframe width="560" height="315" class="mt-5" src="https://www.youtube.com/embed/YSMEsf-gH84" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </div>
-    <p class="text-white" style="text-align: center; margin-top: 5rem; font: 32px bold ">Спасибо за внимание!</p>
 </body>
 
 </html>
