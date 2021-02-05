@@ -4,40 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Домашняя работа</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container">
-        <div class="card mt__5">
-            <div class="row">
-                <div class="col__12 text__center mb__1">
-                    <h2>Впервый на сайте?</h2>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-6 text-center">
+                <div class="card">
+                    <h1>Форма авторизации</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col__12 text__center mb__1">
-                    <span class="text-secondary">Мгновенная регистрация</span>
+            <div class="col-6 text-center card">
+                <h1>Форма регистрации</h1>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6">
+                <div class="card">
+                    <form action="main.html" method="POST">
+                        <div class="card-body">
+                            <input class="form-control" id="auth" type="email" placeholder="Ваш Email">
+                            <input class="mt-3 form-control" type="password" placeholder="Ваш пароль">
+                            <input class="mt-3 btn btn-success" type="submit" value="Авторизоваться">
+                            <label class="mt-4 text-primary btn bg-white border-0" for="reg">Ещё не зарегестрированны?</label>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="row justify__content__center">
-                <div class="col__12">
-                    <form>
-                        <div class="mb__1">
-                            <input type="text" class="form__control" placeholder="Ваше имя">
-                        </div>
-                        <div class="mb__1">
-                            <input type="text" class="form__control" placeholder="Ваша фамилия">
-                        </div>
-                        <div class="mb__1">
-                            <button class="btn">Зарешестрироваться</button>
+            <div class="col-6">
+                <div class="card">
+                    <form action="main.html" method="POST">
+                        <div class="card-body">
+                            <input class="form-control" type="email" placeholder="Ваш Email" id="reg">
+                            <input class="mt-3 form-control" type="text" placeholder="Ваш имя">
+                            <input class="mt-3 form-control" type="password" placeholder="Ваш пароль">
+                            <input class="mt-3 btn btn-success" type="submit" value="Зарегестрироваться">
+                            <label class="mt-4 text-primary btn bg-white border-0" for="auth">Уже зарегестрированны?</label>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
